@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Raminder Singh">
+    <meta name="description" content="My web page">
+    <meta name="keywords" content="html, css, web, web development">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=IBM+Plex+Mono:wght@100;300;400&family=Nunito:wght@300&family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/icon_image.png" type="imagex/x-icon">
+    <link rel="stylesheet" href="./assets/style/index.css" />
+    <title>Fakebook</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">Fakebook</a>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Friends</a></li>
+          <li><a href="./index.html">Pages</a></li>
+          <li><a href="./index.html">Groups</a></li>
+          <li><a href="./index.html">My ads</a></li>
+          <li><a href="./index.html">Settings</a></li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <img
+          src="https://avatars.githubusercontent.com/u/126028236?s=400&u=c1640301317a8ce0375e1d6f6608ae9b60a2edda&v=4"
+        />
+        <div id="profile" class="jw-modal">
+          <div class="jw-modal-body"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form id="poster">
+        <textarea
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"
+          placeholder="What's new, Rammy"
+          required
+        ></textarea>
+        <div class="bottom">
+          <div class="image-selector">
+            <div class="image-container">
+              <img
+                src="./assets/images/icons8-image-96.png"
+                onclick="document.getElementById('image').click();  return false;"
+                alt="image icon"
+              />
+            </div>
+            <input type="file" id="image" style="visibility: hidden" />
+          </div>
+          <button>Post</button>
+        </div>
+      </form>
+      <div class="posts">
+        <div class="post">
+          <div class="info">
+            <div class="left">
+              <img
+                src="https://avatars.githubusercontent.com/u/126028236?s=400&u=c1640301317a8ce0375e1d6f6608ae9b60a2edda&v=4"
+                alt=""
+              />
+              <div class="username">Rammy</div>
+            </div>
+            <div class="date">March 12, 2023</div>
+          </div>
+          <div class="description">
+            My name is Raminder Singh. I am a student of Software development
+            at a well-reputed college named MITT,
+            Winnipeg(MB). I have had a huge
+            interest in web development since high school.
+          </div>
+          <div class="image">
+            <img
+              src="https://avatars.githubusercontent.com/u/126028236?s=400&u=c1640301317a8ce0375e1d6f6608ae9b60a2edda&v=4"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./assets/script/index.js"></script>
+  </body>
+</html>
